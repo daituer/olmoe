@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -323,17 +322,17 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12 text-center">
-						<form name="sentMessage" id="contactForm" novalidate>
+						<form name="sentMessage" id="contactForm" action="https://formspree.io/10001@nmili.com" novalidate>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+										<input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name." name="name">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+										<input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address." name="_replyto">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
@@ -341,7 +340,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+										<textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message." name="content"></textarea>
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
@@ -350,7 +349,7 @@
 							<div class="row">
 								<div class="col-lg-12 text-center">
 									<div id="success"></div>
-									<button type="submit" class="btn">Send Message</button>
+									<button type="submit" class="btn" value="Send">Send Message</button>
 								</div>
 							</div>
 						</form>
@@ -363,7 +362,7 @@
 		</p>
 		<footer>
 			<div class="container text-center">
-				<p>Powered by <span>Olmoe</span> - Office Lady & Moe <a href="https://www.olmoe.com/" target="_blank" title="Olmoe">Olmoe</a> - Collect from <a href="http://www.olmoe.com/" title="网页模板" target="_blank">Olmoe</a> </p>
+				<p>Powered by <span>Olmoe</span> - Office Lady & Moe <a href="https://www.olmoe.com/" target="_blank" title="Olmoe">Olmoe</a> - Collect from <a href="http://www.olmoe.com/" title="Olmoe" target="_blank">Olmoe</a> </p>
 			</div>
 		</footer>
 
