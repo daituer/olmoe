@@ -657,7 +657,7 @@ and (max-width : 480px) {
     font-size: 20px;
 }
 }
-/*如果你preventDefault每次都调用touchstart那么你还应该有一个CSS规则来禁用触摸滚动*/
+/*如果你preventDefault每次都调用touchstart那么你还应该有一个CSS规则来禁用触摸滚动
 .sortable-handler {
     touch-action: none;
-}
+}*/
